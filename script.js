@@ -8,12 +8,18 @@ createApp({
     data() {
         return {
             headingMessage: "Ciao! Questa è la prima lezione con VueJS.",
-            imgSrc: "https://www.vectorlogo.zone/logos/vuejs/vuejs-ar21.svg"
+            subtitleMessage: "BUON DIVERTIMENTO!",
+            imgSrc: "https://www.vectorlogo.zone/logos/vuejs/vuejs-ar21.svg",
+            imgClass: "red"
         }
     },
     methods: {
         startAnimation() {
-            this.headingMessage = "img-animation"
-        }
+            if(this.imgClass === "img-grow") {
+                this.imgClass = "img-shrink";
+            } else {
+                this.imgClass = "img-grow";
+            }
+        },
     }
 }).mount("#app");

@@ -13,10 +13,10 @@
 <body>
 
     <div id="app">
-        <h1>{{ headingMessage }}</h1>
-        <h2>BUON DIVERTIMENTO!</h2>
-        <img class="img-animation" :src="imgSrc">
-        <button @click="startAnimation">Inizia</button>
+        <h1>{{headingMessage}}</h1>
+        <h2>{{subtitleMessage}}</h2>
+        <img :class="imgClass" :src="imgSrc">
+        <button class="start-button" @click="startAnimation">Inizia</button>
     </div>
 
     <script src="script.js"></script>
