@@ -1,0 +1,16 @@
+body {
+    background-color: lightcyan;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#app {
+    margin: 50px auto;
+    width: 80%;
+    text-align: center;
+}
+
+
+.img-animation {
+    scale: 1.5;
+    transition-duration: 1s;
+}
